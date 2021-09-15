@@ -1,0 +1,34 @@
+{
+  "name": "usf",
+  "version": "1.0.0",
+  "description": "Descripcion Readme.md",
+  "main": "index.js",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.3",
+    "flickity": "^2.2.1",
+    "intersection-observer": "^0.11.0",
+    "intl-tel-input": "^17.0.8",
+    "jquery": "^3.5.1",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "git add -A && git commit -m \"Agregados cambios y mejoras\" && git push",
+    "scss": "sass css",
+    "scss_watch": "sass --watch css",
+    "comp": "npm run scss && npm run min",
+    "min": "minify js/main.js > js/main.min.js && minify css/styles.css > css/styles.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IngenioInnato/usf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IngenioInnato/usf/issues"
+  },
+  "homepage": "https://github.com/IngenioInnato/usf#readme"
+}

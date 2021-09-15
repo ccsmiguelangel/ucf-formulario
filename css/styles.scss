@@ -1,0 +1,134 @@
+/* BreakPoints 
+@media (max-width: 575.98px) { ... }
+@media (max-width: 767.98px) { ... }
+@media (max-width: 991.98px) { ... }
+@media (max-width: 1199.98px){ ... }
+
+@media (min-width: 576px) { ... }
+@media (min-width: 768px) { ... }
+@media (min-width: 992px) { ... }
+@media (min-width: 1200px) { ... }
+*/
+
+// @font-face {
+//   font-family: 'RomanSerif';
+//   src: local('RomanSerif'), local('RomanSerif'), url('../font/RomanSerif.woff') format('woff');
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Hussar';
+//   src: local('Hussar'), local('Hussar'), url('../font/hussar-bold.woff') format('woff');
+//   font-display: swap;
+// }
+
+@import "components/normalize";
+@import "components/variables";
+@import "components/intl-tel-input";
+@import "components/bootstrap";
+@import "components/aos";
+@import "components/flickity";
+// BEGIN GENERAL
+html,
+body {
+  scroll-behavior: smooth;
+  font-size: 1rem;
+  /* overflow-x: hidden; */
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+// .check {
+//   list-style-image: url(../img/icon/check.png);
+// }
+.cursor-pointer {
+  cursor: pointer;
+} 
+a:focus, button:focus, div:focus, input:focus, form:focus {
+  outline: none;
+}
+// END GENERAL
+// BEGIN intl-tel-input
+.iti__flag {
+  background-image: url("../img/input/flags.webp");
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url("../img/input/flags@2x.webp");
+  }
+  .no-webp {
+    background-image: url("../img/input/flags.png");
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url("../img/input/flags@2x.png");
+    }
+  }
+}
+
+.iti{
+  width: 100%;
+  color: #000;
+  z-index: 9999;
+}
+// END intl-tel-input
+// BEGIN TEXT SHADOW
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+// END TEXT SHADOW
+// BEGIN Cambiar color de navbar
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(280, 90, 41)' stroke-linecap='round'  stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); 
+}
+// END Cambiar color de navbar
+// BEGIN Whatsapp
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media(max-width: 991.98px) {
+    bottom:15px;
+    right:15px;
+  }
+
+}
+.float:hover {
+  color:#FFF;
+}
+// END Whatsapp
+
+// BEGIN Flickyti
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 540px;
+  /* center images in cells with flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+
+.carousel-cell img {
+  display: block;
+  max-height: 100%;
+}
+// END Flickyti
+
+#loader{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
