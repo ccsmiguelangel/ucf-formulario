@@ -15,8 +15,8 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 #BEGIN Forzar no www
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.unitedsolarfamily.com [NC]
-RewriteRule ^(.*)$ http://unitedsolarfamily.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www.worldsolarprous.com [NC]
+RewriteRule ^(.*)$ http://worldsolarprous.com/$1 [L,R=301]
 #END Forzar no www
 
 # BEGIN Desactivar la firma del servidor
